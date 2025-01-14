@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9quN0OVICYXu42G5iND4EQlXXX0QSIfBIwJn9GJP2os=",
+  "Source": "FitnessREST",
+  "BasePath": "_content/FitnessREST",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
