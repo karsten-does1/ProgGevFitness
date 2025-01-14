@@ -21,7 +21,7 @@ public partial class FitnessDbContext : DbContext
 
     public virtual DbSet<Member> Members { get; set; }
 
-    public virtual DbSet<Program> Programs { get; set; }
+    public virtual DbSet<FitnessProgram> Programs { get; set; }
 
     public virtual DbSet<Reservation> Reservations { get; set; }
 
@@ -113,7 +113,7 @@ public partial class FitnessDbContext : DbContext
                 .HasColumnName("membertype");
         });
 
-        modelBuilder.Entity<Program>(entity =>
+        modelBuilder.Entity<FitnessProgram>(entity =>
         {
             entity.HasKey(e => e.ProgramCode).HasName("PK_program_programCode");
 
@@ -140,7 +140,7 @@ public partial class FitnessDbContext : DbContext
                         .HasForeignKey("MemberId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("programmembers$FK_programmembers_members"),
-                    l => l.HasOne<Program>().WithMany()
+                    l => l.HasOne<FitnessProgram>().WithMany()
                         .HasForeignKey("ProgramCode")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("programmembers$FK_programmembers_program"),

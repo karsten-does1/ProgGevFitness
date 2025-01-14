@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|c:\\users\\loote\\source\\repos\\proggevfitness\\fitnessrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|solutionrelative:fitnessrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|c:\\users\\loote\\source\\repos\\proggevfitness\\fitnessrest\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|solutionrelative:fitnessrest\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E81C3C11-25B9-4A5A-8D3B-3CA377B861B7}|FitnessBL\\FitnessBL.csproj|c:\\users\\loote\\source\\repos\\proggevfitness\\fitnessbl\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E81C3C11-25B9-4A5A-8D3B-3CA377B861B7}|FitnessBL\\FitnessBL.csproj|solutionrelative:fitnessbl\\services\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|c:\\users\\loote\\source\\repos\\proggevfitness\\fitnessrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|solutionrelative:fitnessrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|c:\\users\\loote\\source\\repos\\proggevfitness\\fitnessrest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|solutionrelative:fitnessrest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|c:\\users\\loote\\source\\repos\\proggevfitness\\fitnessrest\\fitnessrest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{01B93EE2-8C7C-42F3-A7C4-CD8D6E67D422}|FitnessREST\\FitnessREST.csproj|solutionrelative:fitnessrest\\fitnessrest.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 176,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,90 +42,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\appsettings.json",
-              "RelativeDocumentMoniker": "FitnessREST\\appsettings.json",
-              "ToolTip": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\appsettings.json",
-              "RelativeToolTip": "FitnessREST\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-14T13:45:45.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\Program.cs",
-              "RelativeDocumentMoniker": "FitnessREST\\Program.cs",
-              "ToolTip": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\Program.cs",
-              "RelativeToolTip": "FitnessREST\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T00:33:37.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MemberService.cs",
-              "DocumentMoniker": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessBL\\Services\\MemberService.cs",
-              "RelativeDocumentMoniker": "FitnessBL\\Services\\MemberService.cs",
-              "ToolTip": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessBL\\Services\\MemberService.cs",
-              "RelativeToolTip": "FitnessBL\\Services\\MemberService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T00:29:47.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FitnessREST.http",
-              "DocumentMoniker": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\FitnessREST.http",
-              "RelativeDocumentMoniker": "FitnessREST\\FitnessREST.http",
-              "ToolTip": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\FitnessREST.http",
-              "RelativeToolTip": "FitnessREST\\FitnessREST.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-14T13:55:45.903Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "FitnessREST\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\Properties\\launchSettings.json",
-              "RelativeToolTip": "FitnessREST\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-14T14:10:28.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MemberController.cs",
-              "DocumentMoniker": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\Controllers\\MemberController.cs",
-              "RelativeDocumentMoniker": "FitnessREST\\Controllers\\MemberController.cs",
-              "ToolTip": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\Controllers\\MemberController.cs",
-              "RelativeToolTip": "FitnessREST\\Controllers\\MemberController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T00:29:39.46Z",
-              "EditorCaption": ""
             }
           ]
         }

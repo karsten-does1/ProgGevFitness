@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using FitnessDL.Models;
 using FitnessBL.Services;
-//using FitnessREST.DTO;
 
 
 namespace FitnessREST.Controllers
@@ -19,22 +18,36 @@ namespace FitnessREST.Controllers
         }
 
         #region GET
-        [HttpGet]
-        public async Task<IActionResult> GetAllMembers()
-        {
-            var members = await _memberService.GetAllMembersAsync();
-            return Ok(members);
-        }
-
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetMemberById(int id)
+        public async Task<IActionResult> GetMember(int id)
         {
             var member = await _memberService.GetMemberByIdAsync(id);
-            if (member == null) return NotFound();
+            if (member == null) return NotFound("Member not found.");
             return Ok(member);
         }
         #endregion
 
+        #region POST
+        [HttpPost]
+        public async Task<IActionResult> AddMember([FromBody] Member newMember)
+        {
+            try
+            {
+                var createdMember = await _memberService.AddMemberAsync(newMember);
+                return CreatedAtAction(nameof(GetMember), new { id = createdMember.MemberId }, createdMember);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(ex.Message);
+            }
+        }
+        #endregion
+
+        
         #region PUT 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateMember(int id, Member member)
@@ -46,6 +59,7 @@ namespace FitnessREST.Controllers
         }
         #endregion
 
+        
         #region Delete
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMember(int id)

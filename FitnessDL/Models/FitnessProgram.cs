@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FitnessDL.Models;
 
-public partial class Program
+public partial class FitnessProgram
 {
     public string ProgramCode { get; set; } = null!;
 

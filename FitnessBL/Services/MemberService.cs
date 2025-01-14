@@ -16,16 +16,52 @@ namespace FitnessBL.Services
         }
 
         #region GET
-        public async Task<IEnumerable<Member>> GetAllMembersAsync()
-        {
-            return await _context.Members.ToListAsync();
-        }
-
+       
         public async Task<Member?> GetMemberByIdAsync(int memberId)
         {
             return await _context.Members.FindAsync(memberId);
         }
         #endregion
+
+        public async Task<Member> AddMemberAsync(Member newMember)
+        {
+            
+            if (string.IsNullOrWhiteSpace(newMember.FirstName) ||
+                string.IsNullOrWhiteSpace(newMember.LastName) ||
+                string.IsNullOrWhiteSpace(newMember.Email) ||
+                string.IsNullOrWhiteSpace(newMember.Address) ||
+                newMember.Birthday == default)
+            {
+                throw new ArgumentException("All required fields must be provided.");
+            }
+
+            
+            var existingMember = await _context.Members
+                .FirstOrDefaultAsync(m => m.Email == newMember.Email);
+            if (existingMember != null)
+            {
+                throw new InvalidOperationException("A member with this email already exists.");
+            }
+
+         
+            if (newMember.Birthday >= DateOnly.FromDateTime(DateTime.Now))
+            {
+                throw new ArgumentException("Birthday must be in the past.");
+            }
+
+            
+            if (string.IsNullOrWhiteSpace(newMember.Membertype))
+            {
+                newMember.Membertype = "Bronze"; 
+            }
+
+
+            _context.Members.Add(newMember);
+            await _context.SaveChangesAsync();
+
+            return newMember;
+        }
+
 
         #region PUT 
         public async Task<bool> UpdateMemberAsync(Member member)
