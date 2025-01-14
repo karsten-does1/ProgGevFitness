@@ -1,0 +1,458 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "FitnessREST",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Members": {
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Members/{id}": {
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cyclingsession": {
+        "type": "object",
+        "properties": {
+          "cyclingsessionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avgWatt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxWatt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avgCadence": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxCadence": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trainingtype": {
+            "type": "string",
+            "nullable": true
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          },
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "member": {
+            "$ref": "#/components/schemas/Member"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Equipment": {
+        "type": "object",
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isInMaintenance": {
+            "type": "boolean"
+          },
+          "reservationTimeSlots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReservationTimeSlot"
+            },
+            "nullable": true
+          },
+          "reservations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reservation"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Member": {
+        "type": "object",
+        "properties": {
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date"
+          },
+          "interests": {
+            "type": "string",
+            "nullable": true
+          },
+          "membertype": {
+            "type": "string",
+            "nullable": true
+          },
+          "cyclingsessions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cyclingsession"
+            },
+            "nullable": true
+          },
+          "reservations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reservation"
+            },
+            "nullable": true
+          },
+          "runningsessionMains": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RunningsessionMain"
+            },
+            "nullable": true
+          },
+          "programCodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Program"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Program": {
+        "type": "object",
+        "properties": {
+          "programCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "target": {
+            "type": "string",
+            "nullable": true
+          },
+          "startdate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "maxMembers": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Member"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Reservation": {
+        "type": "object",
+        "properties": {
+          "reservationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "timeSlotId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipment": {
+            "$ref": "#/components/schemas/Equipment"
+          },
+          "member": {
+            "$ref": "#/components/schemas/Member"
+          },
+          "reservationTimeSlots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReservationTimeSlot"
+            },
+            "nullable": true
+          },
+          "timeSlot": {
+            "$ref": "#/components/schemas/TimeSlot"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReservationTimeSlot": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "reservationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "timeSlotId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipment": {
+            "$ref": "#/components/schemas/Equipment"
+          },
+          "reservation": {
+            "$ref": "#/components/schemas/Reservation"
+          },
+          "timeSlot": {
+            "$ref": "#/components/schemas/TimeSlot"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RunningsessionDetail": {
+        "type": "object",
+        "properties": {
+          "runningsessionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "seqNr": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intervalTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "intervalSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "runningsession": {
+            "$ref": "#/components/schemas/RunningsessionMain"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RunningsessionMain": {
+        "type": "object",
+        "properties": {
+          "runningsessionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "avgSpeed": {
+            "type": "number",
+            "format": "double"
+          },
+          "member": {
+            "$ref": "#/components/schemas/Member"
+          },
+          "runningsessionDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RunningsessionDetail"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TimeSlot": {
+        "type": "object",
+        "properties": {
+          "timeSlotId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "endTime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "partOfDay": {
+            "type": "string",
+            "nullable": true
+          },
+          "reservationTimeSlots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReservationTimeSlot"
+            },
+            "nullable": true
+          },
+          "reservations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reservation"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

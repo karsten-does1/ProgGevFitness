@@ -440,11 +440,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessWPF\\FitnessWPF.csproj",
+      "projectUniqueName": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessWPF\\FitnessWPF.csproj",
       "projectName": "FitnessWPF",
-      "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessWPF\\FitnessWPF.csproj",
+      "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessWPF\\FitnessWPF.csproj",
       "packagesPath": "C:\\Users\\Loote\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessWPF\\obj\\",
+      "outputPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessWPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

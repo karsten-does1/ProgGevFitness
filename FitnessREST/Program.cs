@@ -1,5 +1,7 @@
-
 using Microsoft.EntityFrameworkCore;
+using FitnessDL.Models;
+using FitnessBL.Services;
+
 
 namespace FitnessREST
 {
@@ -9,10 +11,27 @@ namespace FitnessREST
         {
             var builder = WebApplication.CreateBuilder(args);
 
-          // Add services to the container.
-          //   builder.Services.AddDbContext<FitnessDbContext>(options =>
-          //   options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-            builder.Services.AddControllers();
+            // Add services to the container.
+            
+
+            builder.Services.AddScoped<MemberService>();
+          
+
+
+
+            //builder.Services.AddControllers();
+            builder.Services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+            });
+
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+            // dbcontext 
+            builder.Services.AddDbContext<FitnessDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -27,12 +46,16 @@ namespace FitnessREST
             }
 
             app.UseHttpsRedirection();
+
             app.UseAuthorization();
+
+
             app.MapControllers();
 
             app.Run();
         }
     }
-}
+    }
 
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+            

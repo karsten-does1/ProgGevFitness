@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wV45jSl1l/U=",
+  "dgSpecHash": "uae9hXDx120=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessREST\\FitnessREST.csproj",
+  "projectFilePath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\FitnessREST.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Loote\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Loote\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

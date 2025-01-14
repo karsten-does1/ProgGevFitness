@@ -5183,11 +5183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessREST\\FitnessREST.csproj",
+      "projectUniqueName": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\FitnessREST.csproj",
       "projectName": "FitnessREST",
-      "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessREST\\FitnessREST.csproj",
+      "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\FitnessREST.csproj",
       "packagesPath": "C:\\Users\\Loote\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessREST\\obj\\",
+      "outputPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessREST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5208,11 +5208,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessBL\\FitnessBL.csproj": {
-              "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessBL\\FitnessBL.csproj"
+            "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessBL\\FitnessBL.csproj": {
+              "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessBL\\FitnessBL.csproj"
             },
-            "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessDL\\FitnessDL.csproj": {
-              "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGev2Fitness\\FitnessDL\\FitnessDL.csproj"
+            "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessDL\\FitnessDL.csproj": {
+              "projectPath": "C:\\Users\\Loote\\source\\repos\\ProgGevFitness\\FitnessDL\\FitnessDL.csproj"
             }
           }
         }
